@@ -1,12 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JAMTelefonica_USJ02", "JAMTelefonica_USJ02.csproj", "{0840791E-80D6-AC2C-FD1D-4635B3F6669D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JAMTelefonica_USJ02.Editor", "JAMTelefonica_USJ02.Editor.csproj", "{C873809C-B62B-E964-6E50-FFFBAF6F5E48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0840791E-80D6-AC2C-FD1D-4635B3F6669D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0840791E-80D6-AC2C-FD1D-4635B3F6669D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0840791E-80D6-AC2C-FD1D-4635B3F6669D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0840791E-80D6-AC2C-FD1D-4635B3F6669D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C873809C-B62B-E964-6E50-FFFBAF6F5E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C873809C-B62B-E964-6E50-FFFBAF6F5E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C873809C-B62B-E964-6E50-FFFBAF6F5E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C873809C-B62B-E964-6E50-FFFBAF6F5E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
