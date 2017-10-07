@@ -64,15 +64,15 @@ public class PlayerControl : MonoBehaviour {
     {
         if (use != 0)
         {
-            Debug.Log("Raycasting");
+            //Debug.Log("Raycasting");
             RaycastHit hit;
             if(Physics.Raycast(transform.position, model.transform.forward, out hit, 1.0f))
             {
-                Debug.Log("Searching");
+                //Debug.Log("Searching");
                 if(hit.transform.tag == "Interactable")
                 {
                     hit.transform.SendMessage("Activate", model.transform.forward);
-                    Debug.Log("Interacting");
+                    //Debug.Log("Interacting");
                 }
             }
         }

@@ -6,6 +6,7 @@ public class BlockChecker : MonoBehaviour {
 
     //
     public Transform[] checkPoints;
+    public GameObject conectedDoor;
 
     //
     private GameObject block;
@@ -19,8 +20,13 @@ public class BlockChecker : MonoBehaviour {
 	void Update () {
         if (CheckBlock(0))
         {
+            Debug.Log("Yep");
             block.transform.position = new Vector3(transform.position.x, block.transform.position.y, transform.position.z);
             block.GetComponent<SlidingBlock>().SendMessage("StartFalling");
+            if (conectedDoor)
+            {
+                conectedDoor.SendMessage("Open");
+            }
         }
 	}
 
@@ -38,22 +44,26 @@ public class BlockChecker : MonoBehaviour {
     //
     bool CheckBlock(int checkerNum)
     {
+        bool blockDetected = false;
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.up, out hit, 1.0f))
+        //Debug.Log(checkerNum);
+        if (Physics.Raycast(checkPoints[checkerNum].transform.position, transform.up, out hit, 1.0f))
         {
+            //Debug.Log(hit.transform.name + " detected");
             if(hit.transform.tag == "Interactable")
             {
                 if (checkerNum < checkPoints.Length - 1)
                 {
-                    CheckBlock(checkerNum + 1);
+                    blockDetected = CheckBlock(checkerNum + 1);
                 }
                 else
                 {
+                    Debug.Log("Finished");
                     block = hit.transform.gameObject;
                     return true;
                 }                    
             }
         }
-        return false;
+        return blockDetected;
     }
 }
