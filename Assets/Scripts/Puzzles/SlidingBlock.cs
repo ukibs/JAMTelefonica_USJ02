@@ -7,7 +7,7 @@ public class SlidingBlock : MonoBehaviour {
     //
     private Rigidbody rb;
     private Vector3 forwardToMove;
-    private bool active;
+    private bool active, falling;
 
 	// Use this for initialization
 	void Start () {
@@ -43,5 +43,12 @@ public class SlidingBlock : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         Deactivate();
+    }
+
+    //
+    void StartFalling()
+    {
+        rb.velocity = Vector3.zero;
+        falling = true;
     }
 }

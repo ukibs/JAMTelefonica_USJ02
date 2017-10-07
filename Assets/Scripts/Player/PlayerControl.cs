@@ -31,7 +31,7 @@ public class PlayerControl : MonoBehaviour {
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position + model.transform.forward, 0.5f);
+        //Gizmos.DrawSphere(transform.position + model.transform.forward, 0.5f);
     }
 
     //

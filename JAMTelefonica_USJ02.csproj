@@ -76,9 +76,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
@@ -138,6 +135,7 @@
     <Compile Include="Assets\Scripts\Player\BodyFloating.cs" />
     <Compile Include="Assets\Scripts\Player\CameraPivot.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Puzzles\BlockChecker.cs" />
     <Compile Include="Assets\Scripts\Puzzles\CardinalStream.cs" />
     <Compile Include="Assets\Scripts\Puzzles\SlidingBlock.cs" />
   </ItemGroup>
