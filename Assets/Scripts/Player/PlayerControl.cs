@@ -11,18 +11,23 @@ public class PlayerControl : MonoBehaviour {
     private float hAxis, vAxis, use;
     private CharacterController cc;
     private bool controllable = true;
+    private float fallingSpeed = 0.0f;
+    private Vector3 initialPos;
 
 	// Use this for initialization
 	void Start () {
         cc = gameObject.GetComponent<CharacterController>();
+        initialPos = transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        float dt = Time.deltaTime;
+        UpdateGravity(dt);
         if (controllable)
         {
             UpdateControls();
-            UpdateMovement();
+            UpdateMovement(dt);
             UpdateActions();
         }
 	}
@@ -43,20 +48,27 @@ public class PlayerControl : MonoBehaviour {
     }
 
     //
-    void UpdateMovement()
+    void UpdateGravity(float dt)
     {
-        cc.Move(new Vector3(hAxis * movementSpeed * Time.deltaTime, 0.0f, vAxis * movementSpeed * Time.deltaTime));
-        if (hAxis != 0 || vAxis != 0)
+        fallingSpeed += 9.81f * dt;
+        if (cc.isGrounded) fallingSpeed = 0.0f;
+        cc.Move(new Vector3(0.0f, -fallingSpeed * dt, 0.0f));
+        if(transform.position.y < -10.0f)
         {
-            model.rotation = Quaternion.LookRotation(
-                new Vector3(hAxis * movementSpeed * Time.deltaTime, 0.0f, vAxis * movementSpeed * Time.deltaTime));
+            transform.position = initialPos;
         }
     }
 
     //
-    void UpdateOrientation()
+    void UpdateMovement(float dt)
     {
-        //Aqui giraremos el modelo hacia donde se mueve
+        cc.Move(new Vector3(hAxis * movementSpeed * dt, 0.0f, vAxis * movementSpeed * dt));
+        if (hAxis != 0 || vAxis != 0)
+        {
+            model.rotation = Quaternion.LookRotation(
+                new Vector3(hAxis * movementSpeed * dt, 0.0f, vAxis * movementSpeed * dt));
+        }
+        
     }
 
     //
