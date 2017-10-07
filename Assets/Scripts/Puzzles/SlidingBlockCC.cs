@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SlidingBlock : MonoBehaviour {
+public class SlidingBlockCC : MonoBehaviour {
 
     //
-    private Rigidbody rb;
+    private CharacterController cc;
     private Vector3 forwardToMove;
     private bool active, falling;
     private float originalY;
 
 	// Use this for initialization
 	void Start () {
-        rb = gameObject.GetComponent<Rigidbody>();
+        cc = gameObject.GetComponent<CharacterController>();
         originalY = transform.position.y;
 	}
 	
@@ -20,7 +20,7 @@ public class SlidingBlock : MonoBehaviour {
 	void Update () {
         if (active)
         {
-            //transform.Translate(forwardToMove * 2.0f * Time.deltaTime);
+            cc.Move(forwardToMove * 2.0f * Time.deltaTime);
       
         }
         if (falling)
@@ -37,16 +37,16 @@ public class SlidingBlock : MonoBehaviour {
     void Activate(Vector3 forwardToApply)
     {
         forwardToMove = forwardToApply;
-        rb.velocity = forwardToApply * 1.5f;
-        rb.isKinematic = false;
+        //rb.velocity = forwardToApply * 2.0f;
+        //rb.isKinematic = false;
         active = true;
     }
 
     //
     void Deactivate()
     {
-        rb.isKinematic = true;
-        rb.velocity = Vector3.zero;
+        //rb.isKinematic = true;
+        forwardToMove = Vector3.zero;
         active = false;
     }
 
@@ -59,8 +59,8 @@ public class SlidingBlock : MonoBehaviour {
     //
     void StartFalling()
     {
-        rb.isKinematic = true;
-        rb.velocity = Vector3.zero;
+        //rb.isKinematic = true;
+        forwardToMove = Vector3.zero;
         falling = true;
     }
 }
