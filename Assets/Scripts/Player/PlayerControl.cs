@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour {
     //Private
     private float hAxis, vAxis, use;
     private CharacterController cc;
+    private bool controllable = true;
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +19,12 @@ public class PlayerControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        UpdateControls();
-        UpdateMovement();
-        UpdateActions();
-        
+        if (controllable)
+        {
+            UpdateControls();
+            UpdateMovement();
+            UpdateActions();
+        }
 	}
 
     //
@@ -73,5 +76,23 @@ public class PlayerControl : MonoBehaviour {
                 }
             }
         }
+    }
+
+    //
+    public void MakeUncontrollable()
+    {
+        controllable = false;
+    }
+    
+    //
+    public void MakeControllable()
+    {
+        controllable = true;
+    }
+
+    //
+    public bool GetControllable()
+    {
+        return controllable;
     }
 }

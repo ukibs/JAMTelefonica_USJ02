@@ -132,10 +132,11 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\TargetPool.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\TextureFormatUtilities.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\TextureLerper.cs" />
-    <Compile Include="Assets\Scripts\BodyFloating.cs" />
-    <Compile Include="Assets\Scripts\CameraPivot.cs" />
-    <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\SlidingBlock.cs" />
+    <Compile Include="Assets\Scripts\Player\BodyFloating.cs" />
+    <Compile Include="Assets\Scripts\Player\CameraPivot.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Puzzles\CardinalStream.cs" />
+    <Compile Include="Assets\Scripts\Puzzles\SlidingBlock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Shaders\ACES.hlsl" />
