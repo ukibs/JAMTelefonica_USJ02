@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d9a33e337cd1f4e8aded86df088c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination: TestScene
+  destination: SouthTemple
 --- !u!23 &1934159981
 MeshRenderer:
   m_ObjectHideFlags: 0

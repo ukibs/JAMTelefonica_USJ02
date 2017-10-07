@@ -51,11 +51,15 @@ public class SlidingBlockCC : MonoBehaviour {
     }
 
     //
-    void OnCollisionEnter(Collision collision)
+    void OnCharacterCollisionEnter(Collision collision)
     {
         Deactivate();
     }
-
+    //
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Deactivate();
+    }
     //
     void StartFalling()
     {
