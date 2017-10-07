@@ -8,7 +8,7 @@ public class PlayerControl : MonoBehaviour {
     public float movementSpeed;
     public Transform model;
     //Private
-    private float hAxis, vAxis;
+    private float hAxis, vAxis, use;
     private CharacterController cc;
 
 	// Use this for initialization
@@ -20,13 +20,23 @@ public class PlayerControl : MonoBehaviour {
 	void Update () {
         UpdateControls();
         UpdateMovement();
+        UpdateActions();
+        
 	}
+
+    //
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position + model.transform.forward, 0.5f);
+    }
 
     //
     void UpdateControls()
     {
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
+        use = Input.GetAxisRaw("Fire1");
     }
 
     //
@@ -44,5 +54,24 @@ public class PlayerControl : MonoBehaviour {
     void UpdateOrientation()
     {
         //Aqui giraremos el modelo hacia donde se mueve
+    }
+
+    //
+    void UpdateActions()
+    {
+        if (use != 0)
+        {
+            Debug.Log("Raycasting");
+            RaycastHit hit;
+            if(Physics.Raycast(transform.position, model.transform.forward, out hit, 1.0f))
+            {
+                Debug.Log("Searching");
+                if(hit.transform.tag == "Interactable")
+                {
+                    hit.transform.SendMessage("Activate", model.transform.forward);
+                    Debug.Log("Interacting");
+                }
+            }
+        }
     }
 }
