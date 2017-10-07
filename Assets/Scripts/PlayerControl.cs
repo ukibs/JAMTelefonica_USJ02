@@ -6,6 +6,7 @@ public class PlayerControl : MonoBehaviour {
 
     //Public
     public float movementSpeed;
+    public Transform model;
     //Private
     private float hAxis, vAxis;
     private CharacterController cc;
@@ -32,6 +33,11 @@ public class PlayerControl : MonoBehaviour {
     void UpdateMovement()
     {
         cc.Move(new Vector3(hAxis * movementSpeed * Time.deltaTime, 0.0f, vAxis * movementSpeed * Time.deltaTime));
+        if (hAxis != 0 || vAxis != 0)
+        {
+            model.rotation = Quaternion.LookRotation(
+                new Vector3(hAxis * movementSpeed * Time.deltaTime, 0.0f, vAxis * movementSpeed * Time.deltaTime));
+        }
     }
 
     //
