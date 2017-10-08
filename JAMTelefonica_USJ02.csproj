@@ -141,6 +141,7 @@
     <Compile Include="Assets\Scripts\Puzzles\BlockChecker.cs" />
     <Compile Include="Assets\Scripts\Puzzles\CardinalStream.cs" />
     <Compile Include="Assets\Scripts\Puzzles\Door.cs" />
+    <Compile Include="Assets\Scripts\Puzzles\Drawbridge.cs" />
     <Compile Include="Assets\Scripts\Puzzles\FadingLight.cs" />
     <Compile Include="Assets\Scripts\Puzzles\LightTivators.cs" />
     <Compile Include="Assets\Scripts\Puzzles\Ramp.cs" />
