@@ -3016,7 +3016,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &230407198
 GameObject:
@@ -7667,7 +7667,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4909267354023244, guid: 4719ede1f2b15c0429a13568000d6501, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114767455774006748, guid: 4719ede1f2b15c0429a13568000d6501,
         type: 2}
@@ -15296,7 +15296,7 @@ Transform:
   - {fileID: 327511904}
   - {fileID: 180291814}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1336021279
 GameObject:
@@ -16513,7 +16513,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4321942339322968, guid: b7354fe4c6a842a4a91c93bcf4bfea18, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114437666850056742, guid: b7354fe4c6a842a4a91c93bcf4bfea18,
         type: 2}
@@ -21838,6 +21838,64 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1938203930}
   m_Mesh: {fileID: 4300084, guid: 0d39c09527a643e47bf5eb6cf387994d, type: 3}
+--- !u!1001 &1963272327
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400432, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1a68080be3a60a645b79f6b34a24313c, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1964841242
 GameObject:
   m_ObjectHideFlags: 0
@@ -22353,7 +22411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4046083251737088, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 23637458546249258, guid: 0626528ba6d02ee47bdf9c49950b94db,
         type: 2}
