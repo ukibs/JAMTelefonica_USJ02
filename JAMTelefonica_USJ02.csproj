@@ -143,6 +143,7 @@
     <Compile Include="Assets\Scripts\Puzzles\Door.cs" />
     <Compile Include="Assets\Scripts\Puzzles\FadingLight.cs" />
     <Compile Include="Assets\Scripts\Puzzles\LightTivators.cs" />
+    <Compile Include="Assets\Scripts\Puzzles\RotatingMirror.cs" />
     <Compile Include="Assets\Scripts\Puzzles\SlidingBlock.cs" />
     <Compile Include="Assets\Scripts\Puzzles\SlidingBlockCC.cs" />
     <Compile Include="Assets\Scripts\Puzzles\Switch.cs" />
