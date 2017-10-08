@@ -76,9 +76,6 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
@@ -146,6 +143,7 @@
     <Compile Include="Assets\Scripts\Puzzles\Door.cs" />
     <Compile Include="Assets\Scripts\Puzzles\FadingLight.cs" />
     <Compile Include="Assets\Scripts\Puzzles\LightTivators.cs" />
+    <Compile Include="Assets\Scripts\Puzzles\Ramp.cs" />
     <Compile Include="Assets\Scripts\Puzzles\RotatingMirror.cs" />
     <Compile Include="Assets\Scripts\Puzzles\SlidingBlock.cs" />
     <Compile Include="Assets\Scripts\Puzzles\SlidingBlockCC.cs" />
