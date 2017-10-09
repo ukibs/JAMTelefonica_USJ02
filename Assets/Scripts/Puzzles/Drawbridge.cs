@@ -22,7 +22,7 @@ public class Drawbridge : MonoBehaviour {
         if (moving == true)
         {
             //Debug.Log("Moving ");
-            Debug.Log(transform.eulerAngles.x);
+            //Debug.Log(transform.eulerAngles.x);
             transform.Rotate(-rotatingSpeed * Time.deltaTime, 0.0f, 0.0f);
             amountRotated += rotatingSpeed * Time.deltaTime;
             if (amountRotated >= 90.0f)

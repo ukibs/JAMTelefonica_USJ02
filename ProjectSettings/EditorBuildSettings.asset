@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Preload.unity
+    guid: 880eec97eadb71949a890a1ce28629ce
+  - enabled: 1
     path: Assets/Scenes/CentralPlace.unity
     guid: 32255e4420071644081fd374eb140c41
   - enabled: 1
@@ -17,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NorthTemple.unity
     guid: 94e73e214027f724aafd314b7d67f27c
+  - enabled: 1
+    path: Assets/Scenes/EastTemple.unity
+    guid: 91b5c7d312719854e9d7665b0c826df4

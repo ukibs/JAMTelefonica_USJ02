@@ -7,6 +7,13 @@ public class TempleEntrance : MonoBehaviour {
 
     //
     public string destination;
+    public GameObject fade;
+    public Vector3 dirToLerp;
+    public float timeToEnter = 2.0f;
+
+    //
+    private bool countStarted;
+    private float counterTime;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +22,14 @@ public class TempleEntrance : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (countStarted)
+        {
+            counterTime += Time.deltaTime;
+            if(counterTime >= timeToEnter)
+            {
+                SceneManager.LoadScene(destination);
+            }
+        }
 	}
 
     //
@@ -23,7 +37,10 @@ public class TempleEntrance : MonoBehaviour {
     {
         if(other.transform.name == "Player")
         {
-            SceneManager.LoadScene(destination);
+            other.GetComponent<PlayerControl>().MakeUncontrollable();
+            fade.GetComponent<FadeInOut>().Switch();
+            GameObject.Find("CameraPivot").GetComponent<CameraPivot>().SetRotationToLerp(dirToLerp);
+            countStarted = true;
         }
     }
 }

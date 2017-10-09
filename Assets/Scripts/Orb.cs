@@ -6,11 +6,20 @@ using UnityEngine.SceneManagement;
 public class Orb : MonoBehaviour {
 
     //
+    public int orbNumber;
+    public GameObject fade;
+    public float timeToLeave = 2.0f;
+    //
     private float direction = 1;
-    private float initialPosY;
+    private float initialPosY;    
 
-	// Use this for initialization
-	void Start () {
+    //
+    private bool countStarted;
+    private float counterTime;
+
+    // Use this for initialization
+    void Start () {
+        //
         initialPosY = transform.position.y;
 	}
 	
@@ -27,11 +36,24 @@ public class Orb : MonoBehaviour {
 
         //Rings
         transform.Rotate(0.0f, 1.0f, 0.0f);
+
+        //
+        if (countStarted)
+        {
+            counterTime += Time.deltaTime;
+            if (counterTime >= timeToLeave)
+            {
+                SceneManager.LoadScene("CentralPlace");
+            }
+        }
     }
 
     //
     public void Activate()
     {
-        SceneManager.LoadScene("CentralPlace");
+        GameObject.Find("Game Manager").GetComponent<GameManager>().SaveTakenOrb(orbNumber);
+        fade.GetComponent<FadeInOut>().Switch();
+        countStarted = true;
+        
     }
 }
