@@ -2392,7 +2392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &233937685
 Transform:
   m_ObjectHideFlags: 0
@@ -2944,7 +2944,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &277497654
 Prefab:
@@ -2983,11 +2983,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4046083251737088, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1385340878342562, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_Name
-      value: Temple Entrance (3)
+      value: Temple Entrance (North)
       objectReference: {fileID: 0}
     - target: {fileID: 114289980836668164, guid: 0626528ba6d02ee47bdf9c49950b94db,
         type: 2}
@@ -3102,7 +3102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &287682414
 Transform:
   m_ObjectHideFlags: 0
@@ -4103,7 +4103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &362884411
 Transform:
   m_ObjectHideFlags: 0
@@ -4629,7 +4629,7 @@ Transform:
   - {fileID: 479998031}
   - {fileID: 299009299}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &411613942
 GameObject:
@@ -6419,7 +6419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4909267354023244, guid: 4719ede1f2b15c0429a13568000d6501, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4719ede1f2b15c0429a13568000d6501, type: 2}
@@ -7178,7 +7178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &709477654
 GameObject:
@@ -8044,8 +8044,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764273100}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.41337615, y: -0.12600364, z: -0.7745713}
-  m_LocalScale: {x: 5, y: 3, z: 36.442944}
+  m_LocalPosition: {x: -0.41337615, y: -0.194, z: -0.7745713}
+  m_LocalScale: {x: 5, y: 3, z: 50}
   m_Children: []
   m_Father: {fileID: 1039040268}
   m_RootOrder: 47
@@ -11853,7 +11853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1084072526
 Transform:
   m_ObjectHideFlags: 0
@@ -13700,7 +13700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1212255211
 Transform:
   m_ObjectHideFlags: 0
@@ -14527,7 +14527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1276193931
 Transform:
   m_ObjectHideFlags: 0
@@ -16131,7 +16131,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4046083251737088, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385340878342562, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
+      propertyPath: m_Name
+      value: Temple Entrance (South)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
@@ -17433,11 +17437,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4046083251737088, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1385340878342562, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_Name
-      value: Temple Entrance (2)
+      value: Temple Entrance (East)
       objectReference: {fileID: 0}
     - target: {fileID: 114289980836668164, guid: 0626528ba6d02ee47bdf9c49950b94db,
         type: 2}
@@ -19408,8 +19412,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645982780}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.36305904, y: -0.12600364, z: -0.7745713}
-  m_LocalScale: {x: 5, y: 3, z: 36.442944}
+  m_LocalPosition: {x: -0.36305904, y: -0.194, z: -0.7745713}
+  m_LocalScale: {x: 5, y: 3, z: 50}
   m_Children: []
   m_Father: {fileID: 1039040268}
   m_RootOrder: 46
@@ -19815,11 +19819,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4046083251737088, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1385340878342562, guid: 0626528ba6d02ee47bdf9c49950b94db, type: 2}
       propertyPath: m_Name
-      value: Temple Entrance (1)
+      value: Temple Entrance (West)
       objectReference: {fileID: 0}
     - target: {fileID: 114289980836668164, guid: 0626528ba6d02ee47bdf9c49950b94db,
         type: 2}
