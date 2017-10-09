@@ -23,7 +23,7 @@ public class Switch : MonoBehaviour {
     {
         if (receptor && !activated)
         {
-            receptor.transform.SendMessage("CLick");
+            receptor.transform.SendMessage("Click");
             activated = true;
             Debug.Log("Activated");
         }

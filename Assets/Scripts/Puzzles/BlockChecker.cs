@@ -7,6 +7,7 @@ public class BlockChecker : MonoBehaviour {
     //
     public Transform[] checkPoints;
     public GameObject conectedDoor;
+    //
     public bool eastTemple = false;
     public GameObject generatedLight;
     public GameObject previousMirror;
@@ -30,7 +31,7 @@ public class BlockChecker : MonoBehaviour {
             block.GetComponent<SlidingBlock>().SendMessage("StartFalling");
             if (conectedDoor)
             {
-                conectedDoor.SendMessage("Open");
+                conectedDoor.SendMessage("Click");
             }
             if (eastTemple)
             {

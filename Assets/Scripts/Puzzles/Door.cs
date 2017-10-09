@@ -49,7 +49,7 @@ public class Door : MonoBehaviour {
 	}
 
     //
-    void CLick()
+    public void Click()
     {
         activatedOnes++;
         if(activatedOnes == switches)
