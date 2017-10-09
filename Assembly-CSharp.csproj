@@ -126,6 +126,7 @@
      <Compile Include="Assets\Scripts\Puzzles\SlidingBlockCC.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Switch.cs" />
      <Compile Include="Assets\Scripts\TempleEntrance.cs" />
+     <Compile Include="Assets\Scripts\TransparentMaterial.cs" />
      <None Include="Assets\PostProcessing\Shaders\Builtins\FinalPass.shader" />
      <None Include="Assets\PostProcessing\Shaders\Debug\Waveform.compute" />
      <None Include="Assets\PostProcessing\Shaders\Builtins\Uber.shader" />

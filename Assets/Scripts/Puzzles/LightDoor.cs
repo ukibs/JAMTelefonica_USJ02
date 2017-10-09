@@ -7,7 +7,8 @@ public class LightDoor : MonoBehaviour {
     public GameObject lightToReceive;
     public float distanceToMoveDown = 0.1f;
     public float movingSpeed = 0.1f;
-    
+	public GameObject[] thingsToTransparent;
+
     private bool opened = false;
     private bool moving = false;
     private float originalY;
@@ -27,6 +28,11 @@ public class LightDoor : MonoBehaviour {
             {
                 moving = false;
                 opened = true;
+
+				foreach(GameObject thing in thingsToTransparent)
+				{
+					thing.SendMessage("MakeTransparent");
+				}
             }
         }
         //Testing
