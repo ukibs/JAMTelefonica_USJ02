@@ -9,7 +9,6 @@ public class Door : MonoBehaviour {
     public float movingSpeed = 0.1f;
 
     private int activatedOnes = 0;
-    private bool opened = false;
     private bool moving = false;
     private float originalY;
 
@@ -27,7 +26,6 @@ public class Door : MonoBehaviour {
             if(originalY - transform.position.y > distanceToMoveDown)
             {
                 moving = false;
-                opened = true;
             }
         }
         //Testing
