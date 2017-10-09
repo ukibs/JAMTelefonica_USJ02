@@ -7,6 +7,11 @@ public class BlockChecker : MonoBehaviour {
     //
     public Transform[] checkPoints;
     public GameObject conectedDoor;
+    public bool eastTemple = false;
+    public GameObject generatedLight;
+    public GameObject previousMirror;
+    public int correctPos;
+    public GameObject nextMirror;
 
     //
     private GameObject block;
@@ -26,6 +31,14 @@ public class BlockChecker : MonoBehaviour {
             if (conectedDoor)
             {
                 conectedDoor.SendMessage("Open");
+            }
+            if (eastTemple)
+            {
+                block.transform.GetChild(0).GetComponent<RotatingMirror>().SetParameters(
+                    generatedLight, previousMirror, correctPos);
+                generatedLight.SetActive(false);
+                nextMirror.GetComponent<RotatingMirror>().SetPreviousMirror(block.transform.GetChild(0).gameObject);
+                //block.transform.DetachChildren();
             }
         }
 	}

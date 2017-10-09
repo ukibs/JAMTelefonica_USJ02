@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 9348164}
   - component: {fileID: 9348163}
   m_Layer: 0
-  m_Name: pSphere52
+  m_Name: Mirror7
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,9 +277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
-  previousMirror: {fileID: 0}
-  correctPos: 0
+  generatedLight: {fileID: 1032872260}
+  previousMirror: {fileID: 1152779350}
+  correctPos: 3
 --- !u!136 &9348164
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1602,7 +1602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &101309389
 Transform:
   m_ObjectHideFlags: 0
@@ -4669,7 +4669,7 @@ GameObject:
   - component: {fileID: 337941096}
   - component: {fileID: 337941095}
   m_Layer: 0
-  m_Name: pSphere45
+  m_Name: Mirror12
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4741,9 +4741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
+  generatedLight: {fileID: 1405704866}
   previousMirror: {fileID: 0}
-  correctPos: 0
+  correctPos: 3
 --- !u!136 &337941096
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10959,7 +10959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &742383028
 Transform:
   m_ObjectHideFlags: 0
@@ -12264,7 +12264,7 @@ GameObject:
   - component: {fileID: 812767798}
   - component: {fileID: 812767797}
   m_Layer: 0
-  m_Name: pSphere57
+  m_Name: Mirror14
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12336,8 +12336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
-  previousMirror: {fileID: 0}
+  generatedLight: {fileID: 939948627}
+  previousMirror: {fileID: 2069439825}
   correctPos: 0
 --- !u!136 &812767798
 CapsuleCollider:
@@ -13527,7 +13527,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874819226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1198914, y: 0.08633571, z: -0.739728}
+  m_LocalPosition: {x: -2.1198914, y: 0.0891, z: -0.739728}
   m_LocalScale: {x: 5, y: 6, z: 5}
   m_Children:
   - {fileID: 937088910}
@@ -13640,7 +13640,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 875139734}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0698273, y: 0.08633571, z: -0.68984884}
+  m_LocalPosition: {x: -2.0698273, y: 0.0901, z: -0.68984884}
   m_LocalScale: {x: 5, y: 6, z: 5}
   m_Children:
   - {fileID: 1581008363}
@@ -14568,7 +14568,7 @@ GameObject:
   - component: {fileID: 926477238}
   m_Layer: 0
   m_Name: pSphere60
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14669,7 +14669,7 @@ GameObject:
   - component: {fileID: 937088913}
   m_Layer: 0
   m_Name: pSphere40
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15965,7 +15965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1022838117
 Transform:
   m_ObjectHideFlags: 0
@@ -16516,7 +16516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1054609310
 Transform:
   m_ObjectHideFlags: 0
@@ -16837,7 +16837,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1064739785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1200674, y: 0.08633571, z: -0.5392549}
+  m_LocalPosition: {x: -2.1200674, y: 0.0901, z: -0.5392549}
   m_LocalScale: {x: 5, y: 6, z: 5}
   m_Children:
   - {fileID: 926477235}
@@ -17991,7 +17991,7 @@ GameObject:
   - component: {fileID: 1121759470}
   - component: {fileID: 1121759469}
   m_Layer: 0
-  m_Name: pSphere42
+  m_Name: Mirror10
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18063,9 +18063,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
+  generatedLight: {fileID: 1058533060}
   previousMirror: {fileID: 0}
-  correctPos: 0
+  correctPos: 1
 --- !u!136 &1121759470
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18415,7 +18415,7 @@ GameObject:
   - component: {fileID: 1152779355}
   - component: {fileID: 1152779354}
   m_Layer: 0
-  m_Name: pSphere50
+  m_Name: Mirror6
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18487,7 +18487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
+  generatedLight: {fileID: 1831654920}
   previousMirror: {fileID: 0}
   correctPos: 0
 --- !u!136 &1152779355
@@ -20707,6 +20707,77 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260570507}
   m_Mesh: {fileID: 4300186, guid: d4deda1679742984d8aa7253e0571344, type: 3}
+--- !u!1001 &1264048772
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.539
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623641037180224, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_Name
+      value: Block Checker (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: previousMirror
+      value: 
+      objectReference: {fileID: 1121759465}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: nextMirror
+      value: 
+      objectReference: {fileID: 337941091}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: correctPos
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: generatedLight
+      value: 
+      objectReference: {fileID: 1054609309}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: eastTemple
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1268051170
 GameObject:
   m_ObjectHideFlags: 0
@@ -20805,7 +20876,7 @@ GameObject:
   - component: {fileID: 1271338410}
   m_Layer: 0
   m_Name: Orb
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24988,6 +25059,72 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1457659530}
   m_Mesh: {fileID: 4300606, guid: d4deda1679742984d8aa7253e0571344, type: 3}
+--- !u!1001 &1459678452
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.539
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 4.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623641037180224, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_Name
+      value: Block Checker (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: eastTemple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: generatedLight
+      value: 
+      objectReference: {fileID: 742383027}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: previousMirror
+      value: 
+      objectReference: {fileID: 1476771867}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: nextMirror
+      value: 
+      objectReference: {fileID: 1121759465}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1464779184
 GameObject:
   m_ObjectHideFlags: 0
@@ -25156,7 +25293,7 @@ GameObject:
   - component: {fileID: 1476771872}
   - component: {fileID: 1476771871}
   m_Layer: 0
-  m_Name: pSphere54
+  m_Name: Mirror8
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25228,9 +25365,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
-  previousMirror: {fileID: 0}
-  correctPos: 0
+  generatedLight: {fileID: 253027901}
+  previousMirror: {fileID: 9348159}
+  correctPos: 2
 --- !u!136 &1476771872
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25964,7 +26101,7 @@ GameObject:
   - component: {fileID: 1581008366}
   m_Layer: 0
   m_Name: pSphere58
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29280,7 +29417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightToReceive: {fileID: 69902590}
   distanceToMoveDown: 1
-  movingSpeed: 0.1
+  movingSpeed: 0.2
 --- !u!65 &1759479430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31442,6 +31579,73 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1849351323}
   m_Mesh: {fileID: 4300706, guid: d4deda1679742984d8aa7253e0571344, type: 3}
+--- !u!1001 &1859783597
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.539
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.397
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185915871897626, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: eastTemple
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: generatedLight
+      value: 
+      objectReference: {fileID: 1958291012}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: previousMirror
+      value: 
+      objectReference: {fileID: 1766691642}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: correctPos
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114020291660284960, guid: a66ae260cb8ffc34bb181e903f04e764,
+        type: 2}
+      propertyPath: nextMirror
+      value: 
+      objectReference: {fileID: 1152779350}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a66ae260cb8ffc34bb181e903f04e764, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1870830329
 GameObject:
   m_ObjectHideFlags: 0
@@ -33339,7 +33543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1958291013
 Transform:
   m_ObjectHideFlags: 0
@@ -34862,7 +35066,7 @@ GameObject:
   - component: {fileID: 2069439830}
   - component: {fileID: 2069439829}
   m_Layer: 0
-  m_Name: pSphere49
+  m_Name: Mirror13
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34934,9 +35138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d92e6b009f594d8cdef23da7f7582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedLight: {fileID: 0}
-  previousMirror: {fileID: 0}
-  correctPos: 0
+  generatedLight: {fileID: 1891284452}
+  previousMirror: {fileID: 337941091}
+  correctPos: 1
 --- !u!136 &2069439830
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -35938,7 +36142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightToReceive: {fileID: 939948627}
   distanceToMoveDown: 1
-  movingSpeed: 0.1
+  movingSpeed: 0.2
 --- !u!1 &2107221854
 GameObject:
   m_ObjectHideFlags: 0

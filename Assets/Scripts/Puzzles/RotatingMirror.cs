@@ -91,4 +91,18 @@ public class RotatingMirror : MonoBehaviour {
             generatedLight.SetActive(false);
         }
     }
+
+    //
+    public void SetParameters(GameObject generatedLight, GameObject previousMirror, int correctPos)
+    {
+        this.generatedLight = generatedLight;
+        this.previousMirror = previousMirror;
+        this.correctPos = correctPos;
+    }
+
+    //
+    public void SetPreviousMirror(GameObject previousMirror)
+    {
+        this.previousMirror = previousMirror;
+    }
 }

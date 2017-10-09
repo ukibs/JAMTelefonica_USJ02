@@ -29,6 +29,7 @@ public class SlidingBlock : MonoBehaviour {
             if(originalY - transform.position.y > 0.5f)
             {
                 falling = false;
+                transform.DetachChildren();
             }
         }
 	}
