@@ -11,6 +11,7 @@ public class Door : MonoBehaviour {
     private int activatedOnes = 0;
     private bool moving = false;
     private float originalY;
+	private LightTivators westAltar;
 
 	// Use this for initialization
 	void Start () {
@@ -34,7 +35,17 @@ public class Door : MonoBehaviour {
             moving = true;
             Debug.Log("Testing activation");
         }
-
+		/*
+		// if the switches of the West chamber are all activated, activate the property "LightTivators" on the object
+		if(transform.tag=="westAltar")
+		{
+			if (activatedOnes == switches)
+			{
+				westAltar = transform.GetComponent<LightTivators> ();
+				westAltar.enabled;
+			}
+		}
+		*/
 	}
 
     //
