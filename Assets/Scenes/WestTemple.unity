@@ -3329,6 +3329,7 @@ GameObject:
   - component: {fileID: 169193699}
   - component: {fileID: 169193702}
   - component: {fileID: 169193701}
+  - component: {fileID: 169193703}
   m_Layer: 0
   m_Name: pCube347
   m_TagString: Untagged
@@ -3414,6 +3415,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.13686441, z: 0.4}
   m_Center: {x: 0, y: 0, z: -0.22}
+--- !u!114 &169193703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169193697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8100e3f10f4adcc469799cc76c192135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart: 1
 --- !u!1 &171560652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4682,6 +4695,7 @@ GameObject:
   - component: {fileID: 225509670}
   - component: {fileID: 225509672}
   - component: {fileID: 225509671}
+  - component: {fileID: 225509673}
   m_Layer: 0
   m_Name: pCube474
   m_TagString: Untagged
@@ -4743,6 +4757,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 225509669}
   m_Mesh: {fileID: 4300186, guid: 02fc71d5dcfd03d4b9eca16ea585d67c, type: 3}
+--- !u!114 &225509673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 225509669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8100e3f10f4adcc469799cc76c192135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart: 1
 --- !u!1 &235444494
 GameObject:
   m_ObjectHideFlags: 0
@@ -16944,6 +16970,7 @@ MonoBehaviour:
   switches: 3
   distanceToMoveDown: 2
   movingSpeed: 0.3
+  thingsToTransparent: []
 --- !u!1 &806128016
 GameObject:
   m_ObjectHideFlags: 0
@@ -26154,6 +26181,8 @@ MonoBehaviour:
   switches: 1
   distanceToMoveDown: 1
   movingSpeed: 0.1
+  thingsToTransparent:
+  - {fileID: 1640796046}
 --- !u!1 &1264421573
 GameObject:
   m_ObjectHideFlags: 0
@@ -32690,8 +32719,9 @@ GameObject:
   - component: {fileID: 1640796048}
   - component: {fileID: 1640796051}
   - component: {fileID: 1640796050}
+  - component: {fileID: 1640796052}
   m_Layer: 0
-  m_Name: pCube754
+  m_Name: MiddleWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32775,6 +32805,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.13686441, z: 0.8}
   m_Center: {x: 0, y: 0, z: -0.13}
+--- !u!114 &1640796052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640796046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8100e3f10f4adcc469799cc76c192135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart: 0
 --- !u!1 &1643243340
 GameObject:
   m_ObjectHideFlags: 0

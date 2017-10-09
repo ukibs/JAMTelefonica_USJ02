@@ -7,6 +7,7 @@ public class Door : MonoBehaviour {
     public int switches;
     public float distanceToMoveDown = 0.1f;
     public float movingSpeed = 0.1f;
+    public GameObject[] thingsToTransparent;
 
     private int activatedOnes = 0;
     private bool moving = false;
@@ -27,6 +28,10 @@ public class Door : MonoBehaviour {
             if(originalY - transform.position.y > distanceToMoveDown)
             {
                 moving = false;
+                foreach(GameObject thing in thingsToTransparent)
+                {
+                    thing.SendMessage("MakeTransparent");
+                }
             }
         }
         //Testing

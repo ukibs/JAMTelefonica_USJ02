@@ -40,7 +40,7 @@ public class Drawbridge : MonoBehaviour {
     }
 
     //
-    void CLick()
+    void Click()
     {
         activatedOnes++;
         if (activatedOnes == switches)
