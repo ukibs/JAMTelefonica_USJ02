@@ -3362,6 +3362,7 @@ GameObject:
   - component: {fileID: 63143816}
   - component: {fileID: 63143818}
   - component: {fileID: 63143817}
+  - component: {fileID: 63143819}
   m_Layer: 0
   m_Name: pCube1883
   m_TagString: Untagged
@@ -3423,6 +3424,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 63143815}
   m_Mesh: {fileID: 4302298, guid: a1b0cd50636d82040a57cf2ffae98964, type: 3}
+--- !u!65 &63143819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63143815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010000001, y: 0.01, z: 0.010000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &64024395
 GameObject:
   m_ObjectHideFlags: 0
@@ -61579,7 +61592,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268530049}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.02

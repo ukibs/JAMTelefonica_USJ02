@@ -49,6 +49,13 @@ public class Orb : MonoBehaviour {
     }
 
     //
+    private void OnTriggerEnter(Collider other)
+    {
+        //if(other)
+        Activate();
+    }
+
+    //
     public void Activate()
     {
         GameObject.Find("Game Manager").GetComponent<GameManager>().SaveTakenOrb(orbNumber);

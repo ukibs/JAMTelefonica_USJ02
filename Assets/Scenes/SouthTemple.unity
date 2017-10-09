@@ -3061,10 +3061,10 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 128556138}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.01
+  m_Radius: 0.02
   m_Center: {x: 4.656613e-10, y: 0, z: 0.000000028871}
 --- !u!1 &129195855
 GameObject:
@@ -6587,6 +6587,7 @@ MonoBehaviour:
   switches: 1
   distanceToMoveDown: 1
   movingSpeed: 0.2
+  thingsToTransparent: []
 --- !u!1 &317509735
 GameObject:
   m_ObjectHideFlags: 0

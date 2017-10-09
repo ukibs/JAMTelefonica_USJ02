@@ -33,6 +33,6 @@ public class GameManager : MonoBehaviour {
     //
     public void SaveTakenOrb(int orbNum)
     {
-        takenOrbs[orbNum] = false;
+        takenOrbs[orbNum] = true;
     }
 }
