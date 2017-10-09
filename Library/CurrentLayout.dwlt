@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 1251
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 444
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -145,7 +145,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Martin
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1252
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 1253
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 801
     height: 419
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -357,19 +357,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Puzzles
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Puzzles
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\usuario\Documents\UnityProjects\JAMTelefonica_USJ02
+  m_LastProjectPath: C:\Users\Usuario\Desktop\JAMTelefonica_USJ02
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 18620000
-    m_LastClickedID: 25112
-    m_ExpandedIDs: 000000005c30000068400000704000006e580000705800007458000078580000186200001a620000226200006062000000ca9a3bffffff7f
+    m_SelectedIDs: 66300000
+    m_LastClickedID: 12390
+    m_ExpandedIDs: 0000000066300000724000007a400000785800007a5800007e5800008258000022620000246200002c6200006a62000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -397,7 +397,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005c30000068400000704000006e580000705800007458000078580000186200001a6200002262000060620000
+    m_ExpandedIDs: 0000000066300000724000007a400000785800007a5800007e5800008258000022620000246200002c6200006a620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -512,10 +512,10 @@ MonoBehaviour:
     width: 289
     height: 398
   m_TreeViewState:
-    scrollPos: {x: 0, y: 160}
-    m_SelectedIDs: a4900000
-    m_LastClickedID: 37028
-    m_ExpandedIDs: 6a8dfcff8228ffff885affff52deffff64deffff00000000222f0000382f0000143000001c860000c68a0000
+    scrollPos: {x: 0, y: 4275}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: c091fcff00000000826200001864000090640000166800001a6800007c6800008a680000fa680000066900009a690000fa690000b66a0000c46c00004c6f00007c710000a2710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -565,14 +565,14 @@ MonoBehaviour:
     width: 797
     height: 398
   m_SceneLighting: 1
-  lastFramingTime: 705.5605583479802
+  lastFramingTime: 927.739126741823
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 19.79405, y: 1.4092512, z: 5.766179}
+    m_Target: {x: 21.190369, y: 0.20263672, z: 7.385809}
     speed: 2
-    m_Value: {x: 19.79405, y: 1.4092512, z: 5.766179}
+    m_Value: {x: 21.190369, y: 0.20263672, z: 7.385809}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -595,17 +595,17 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.26701924, y: -0.0095218085, z: 0.0027174708, w: -0.96364033}
+    m_Target: {x: -0.34114754, y: -0.5516694, z: 0.26371104, w: -0.7139609}
     speed: 2
-    m_Value: {x: -0.26701924, y: -0.0095218085, z: 0.0027174708, w: -0.96364033}
+    m_Value: {x: -0.34114677, y: -0.55166817, z: 0.26371044, w: -0.7139593}
   m_Size:
-    m_Target: 2.430147
+    m_Target: 3.9437833
     speed: 2
-    m_Value: 2.430147
+    m_Value: 3.9437833
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
