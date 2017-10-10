@@ -22199,7 +22199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b965e37ebb4fe8d469f3078bb4661039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbNumber: 0
+  orbNumber: 1
   fade: {fileID: 1496368969}
   timeToLeave: 2
 --- !u!23 &1271338412

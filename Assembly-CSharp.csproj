@@ -108,6 +108,7 @@
      <Compile Include="Assets\Scripts\CollectedOrb.cs" />
      <Compile Include="Assets\Scripts\FadeInOut.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Orb.cs" />
      <Compile Include="Assets\Scripts\Player\BodyFloating.cs" />
      <Compile Include="Assets\Scripts\Player\CameraPivot.cs" />
