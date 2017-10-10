@@ -6,6 +6,9 @@ public class Menu : MonoBehaviour {
 
     public GameObject player;
     public GameObject cameraPivot;
+	public Texture tittle;
+	public Texture pressButton;
+	public Texture credits;
 
     private bool ending;
     private float timeToEnd;
@@ -48,5 +51,18 @@ public class Menu : MonoBehaviour {
                 Application.Quit();
             }
         }
+	}
+
+	//
+	void OnGUI(){
+		if (!GameObject.Find ("Game Manager").GetComponent<GameManager> ().GetGameStarted ())
+		{
+			GUI.DrawTexture (new Rect (Screen.width/2 - 500, Screen.height/10, 1000, 200), tittle, ScaleMode.ScaleToFit);
+			GUI.DrawTexture (new Rect (Screen.width/2 - 500, Screen.height - Screen.height/3, 1000, 200), pressButton, ScaleMode.ScaleToFit);
+		}
+		if (ending)
+		{
+			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), credits, ScaleMode.ScaleToFit);
+		}
 	}
 }

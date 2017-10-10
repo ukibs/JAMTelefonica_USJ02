@@ -5,6 +5,9 @@ using UnityEngine;
 public class SlidingBlock : MonoBehaviour {
 
     //
+	public AudioClip[] slideSounds;
+
+	//
     private Rigidbody rb;
     private Vector3 forwardToMove;
     private bool active, falling;
@@ -44,6 +47,9 @@ public class SlidingBlock : MonoBehaviour {
             rb.velocity = forwardToApply * 1.5f;
             rb.isKinematic = false;
             active = true;
+		gameObject.GetComponent<AudioSource> ().clip = slideSounds [Random.Range (0, slideSounds.Length)];
+		gameObject.GetComponent<AudioSource> ().Play ();
+
         //}
     }
 

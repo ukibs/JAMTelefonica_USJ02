@@ -5,6 +5,7 @@ using UnityEngine;
 public class Switch : MonoBehaviour {
 
     public GameObject receptor;
+	public AudioClip[] activateSounds;
 
     private bool activated = false;
 
@@ -33,6 +34,9 @@ public class Switch : MonoBehaviour {
             activated = true;
             Debug.Log("Activated");
             transform.GetChild(0).gameObject.SetActive(true);
+			//
+			gameObject.GetComponent<AudioSource> ().clip = activateSounds [Random.Range (0, activateSounds.Length)];
+			gameObject.GetComponent<AudioSource> ().Play ();
         }
     }
 }

@@ -62,5 +62,7 @@ public class Orb : MonoBehaviour {
         fade.GetComponent<FadeInOut>().Switch();
         countStarted = true;
         
+		//
+		gameObject.GetComponent<AudioSource>().Play();
     }
 }

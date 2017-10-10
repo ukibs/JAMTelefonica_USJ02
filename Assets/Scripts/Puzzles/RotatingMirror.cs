@@ -8,6 +8,7 @@ public class RotatingMirror : MonoBehaviour {
     public GameObject generatedLight;
     public GameObject previousMirror;
     public int correctPos;
+	public AudioClip[] rotateSounds;
 
     //
     private float initialRotation, nextRotation;
@@ -70,6 +71,8 @@ public class RotatingMirror : MonoBehaviour {
             if (nextRotation > 360) nextRotation -= 360;
             if (orientationOk) orientationOk = false;
             //Debug.Log("Activated");
+			gameObject.GetComponent<AudioSource> ().clip = rotateSounds [Random.Range (0, rotateSounds.Length)];
+			gameObject.GetComponent<AudioSource> ().Play ();
         }
     }
 
