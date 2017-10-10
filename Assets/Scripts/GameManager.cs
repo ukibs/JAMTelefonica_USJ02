@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 
     //
     private bool[] takenOrbs;
+    private bool gameStarted;
     //
     void Awake()
     {
@@ -34,5 +35,17 @@ public class GameManager : MonoBehaviour {
     public void SaveTakenOrb(int orbNum)
     {
         takenOrbs[orbNum] = true;
+    }
+
+    //
+    public void StartGame()
+    {
+        gameStarted = true;
+    }
+
+    //
+    public bool GetGameStarted()
+    {
+        return gameStarted;
     }
 }

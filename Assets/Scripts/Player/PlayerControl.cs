@@ -8,7 +8,8 @@ public class PlayerControl : MonoBehaviour {
     public float movementSpeed;
     public Transform model;
     //Private
-    private float hAxis, vAxis, use;
+    private float hAxis, vAxis;
+    private bool use;
     private CharacterController cc;
     private bool controllable = true;
     private float fallingSpeed = 0.0f;
@@ -45,7 +46,7 @@ public class PlayerControl : MonoBehaviour {
     {
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
-        use = Input.GetAxisRaw("Fire1");
+        use = Input.GetAxisRaw("Fire1") != 0 || Input.GetAxisRaw("Jump") != 0;
     }
 
     //
@@ -69,13 +70,12 @@ public class PlayerControl : MonoBehaviour {
             model.rotation = Quaternion.LookRotation(
                 new Vector3(hAxis * movementSpeed * dt, 0.0f, vAxis * movementSpeed * dt));
         }
-        
     }
 
     //
     void UpdateActions()
     {
-        if (use != 0)
+        if (use)
         {
             //Debug.Log("Raycasting");
             RaycastHit hit;

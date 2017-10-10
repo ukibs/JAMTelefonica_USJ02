@@ -37,10 +37,14 @@ public class SlidingBlock : MonoBehaviour {
     //
     void Activate(Vector3 forwardToApply)
     {
-        forwardToMove = forwardToApply;
-        rb.velocity = forwardToApply * 1.5f;
-        rb.isKinematic = false;
-        active = true;
+        //Debug.Log(forwardToApply.magnitude);
+        if (forwardToApply.magnitude < 1.2f) {
+            GameObject.Find("Player").GetComponent<PlayerControl>().MakeUncontrollable();
+            forwardToMove = forwardToApply;
+            rb.velocity = forwardToApply * 1.5f;
+            rb.isKinematic = false;
+            active = true;
+        }
     }
 
     //
@@ -49,6 +53,7 @@ public class SlidingBlock : MonoBehaviour {
         rb.isKinematic = true;
         rb.velocity = Vector3.zero;
         active = false;
+        GameObject.Find("Player").GetComponent<PlayerControl>().MakeControllable();
     }
 
     //
@@ -63,5 +68,6 @@ public class SlidingBlock : MonoBehaviour {
         rb.isKinematic = true;
         rb.velocity = Vector3.zero;
         falling = true;
+        GameObject.Find("Player").GetComponent<PlayerControl>().MakeControllable();
     }
 }

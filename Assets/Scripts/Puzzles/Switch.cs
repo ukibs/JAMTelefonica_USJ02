@@ -19,6 +19,12 @@ public class Switch : MonoBehaviour {
 	}
 
     //
+    private void OnTriggerEnter(Collider other)
+    {
+        Activate();
+    }
+
+    //
     public void Activate()
     {
         if (receptor && !activated)

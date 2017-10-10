@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CentralPlace.unity
+- path: Assets/Scenes/SouthTemple.unity
   isLoaded: 1
   isActive: 1
