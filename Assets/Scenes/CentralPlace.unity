@@ -9165,6 +9165,11 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 2057174062}
+    - target: {fileID: 114187179648475314, guid: b7354fe4c6a842a4a91c93bcf4bfea18,
+        type: 2}
+      propertyPath: antialiasingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7354fe4c6a842a4a91c93bcf4bfea18, type: 2}
   m_IsPrefabParent: 0
@@ -13527,6 +13532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e092b9c2dffbddc4a90f433f403bc397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slideSounds: []
 --- !u!65 &1190956173
 BoxCollider:
   m_ObjectHideFlags: 0

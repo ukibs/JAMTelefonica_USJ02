@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour {
 	public Texture credits;
 
     private bool ending;
+    private bool readyToQuit;
     private float timeToEnd;
 
 	// Use this for initialization
@@ -46,7 +47,15 @@ public class Menu : MonoBehaviour {
         if (ending)
         {
             timeToEnd += Time.deltaTime;
-            if(timeToEnd >= 10.0f)
+            if(timeToEnd >= 5.0f)
+            {
+                readyToQuit = true;
+            }
+        }
+        //
+        if (readyToQuit)
+        {
+            if(Input.GetAxisRaw("Fire1") != 0.0f && Input.GetAxisRaw("Jump") != 0.0f)
             {
                 Application.Quit();
             }
@@ -60,7 +69,7 @@ public class Menu : MonoBehaviour {
 			GUI.DrawTexture (new Rect (Screen.width/2 - 500, Screen.height/10, 1000, 200), tittle, ScaleMode.ScaleToFit);
 			GUI.DrawTexture (new Rect (Screen.width/2 - 500, Screen.height - Screen.height/3, 1000, 200), pressButton, ScaleMode.ScaleToFit);
 		}
-		if (ending)
+		if (readyToQuit)
 		{
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), credits, ScaleMode.ScaleToFit);
 		}

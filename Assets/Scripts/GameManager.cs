@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         takenOrbs = new bool[4];
+        Cursor.visible = false;
         SceneManager.LoadScene("CentralPlace");
 	}
 	

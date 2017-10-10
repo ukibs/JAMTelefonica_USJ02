@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class PlayerControl : MonoBehaviour {
     private bool controllable = true;
     private float fallingSpeed = 0.0f;
     private Vector3 initialPos;
+    private float interactCooldown;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +26,7 @@ public class PlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float dt = Time.deltaTime;
-        
+        interactCooldown += dt;
         if (controllable)
         {
             UpdateGravity(dt);
@@ -47,6 +49,10 @@ public class PlayerControl : MonoBehaviour {
         hAxis = Input.GetAxisRaw("Horizontal");
         vAxis = Input.GetAxisRaw("Vertical");
         use = Input.GetAxisRaw("Fire1") != 0 || Input.GetAxisRaw("Jump") != 0;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     //
@@ -75,8 +81,9 @@ public class PlayerControl : MonoBehaviour {
     //
     void UpdateActions()
     {
-        if (use)
+        if (use && interactCooldown > 1.0f)
         {
+            //interactCooldown = 0.0f;
             //Debug.Log("Raycasting");
             RaycastHit hit;
             if(Physics.Raycast(transform.position, model.transform.forward, out hit, 1.0f))
