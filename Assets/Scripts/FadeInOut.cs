@@ -49,4 +49,16 @@ public class FadeInOut : MonoBehaviour {
 		return alpha;
 	}
 	#endregion
+
+    //
+    public void SetFadeSpeed(float newFadeSpeed)
+    {
+        fadeSpeed = newFadeSpeed;
+    }
+
+    //
+    public void SetAlpha(float newAlpha)
+    {
+        alpha = newAlpha;
+    }
 }

@@ -38,13 +38,13 @@ public class SlidingBlock : MonoBehaviour {
     void Activate(Vector3 forwardToApply)
     {
         //Debug.Log(forwardToApply.magnitude);
-        if (forwardToApply.magnitude < 1.2f) {
+        //if (forwardToApply.magnitude == 1.0f) {
             GameObject.Find("Player").GetComponent<PlayerControl>().MakeUncontrollable();
             forwardToMove = forwardToApply;
             rb.velocity = forwardToApply * 1.5f;
             rb.isKinematic = false;
             active = true;
-        }
+        //}
     }
 
     //

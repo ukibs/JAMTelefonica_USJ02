@@ -22,7 +22,12 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetKeyDown(KeyCode.O)){
+            takenOrbs[0] = true;
+            takenOrbs[1] = true;
+            takenOrbs[2] = true;
+            takenOrbs[3] = true;
+        }
 	}
 
     //
@@ -47,5 +52,11 @@ public class GameManager : MonoBehaviour {
     public bool GetGameStarted()
     {
         return gameStarted;
+    }
+
+    //
+    public bool CheckFinished()
+    {
+        return takenOrbs[0] && takenOrbs[1] && takenOrbs[2] && takenOrbs[3];
     }
 }

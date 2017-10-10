@@ -14,6 +14,7 @@ public class CameraPivot : MonoBehaviour {
     private Vector3 cameraOriginalLEulerAngles;
     private bool startingGame;
     private float startingCount;
+    private bool gameEnded;
 
     // Use this for initialization
     void Start () {
@@ -21,7 +22,7 @@ public class CameraPivot : MonoBehaviour {
         cameraOriginalLPosition = gameCamera.transform.localPosition;
         cameraOriginalLEulerAngles = gameCamera.transform.localEulerAngles;
         //
-        if (player.active == false)
+        if (!GameObject.Find("Game Manager").GetComponent<GameManager>().GetGameStarted())
         {
             gameCamera.transform.position = cameraMenuPos.position;
             gameCamera.transform.eulerAngles = new Vector3(90.0f, 0.0f, 0.0f);
@@ -57,6 +58,11 @@ public class CameraPivot : MonoBehaviour {
                 startingGame = false;
             }
         }
+        //
+        if (gameEnded)
+        {
+            transform.Rotate(0.0f, -30.0f * Time.deltaTime, 0.0f);
+        }
     }
 
     //
@@ -69,5 +75,11 @@ public class CameraPivot : MonoBehaviour {
     public void StartGame()
     {
         startingGame = true;
+    }
+
+    //
+    public void EndGame()
+    {
+        gameEnded = true;
     }
 }

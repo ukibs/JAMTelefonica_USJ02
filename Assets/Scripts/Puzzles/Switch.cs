@@ -32,6 +32,7 @@ public class Switch : MonoBehaviour {
             receptor.transform.SendMessage("Click");
             activated = true;
             Debug.Log("Activated");
+            transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }
